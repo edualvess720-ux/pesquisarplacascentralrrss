@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>URBAN ELITE | Streetwear Oficial</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#0d0d0d;
+      color:#fff;
+    }
+
+    header{
+      background:#000;
+      padding:18px 50px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      border-bottom:1px solid #1f1f1f;
+      position:sticky;
+      top:0;
+      z-index:999;
+    }
+
+    .logo{
+      font-size:34px;
+      font-weight:900;
+      letter-spacing:3px;
+      color:#ffffff;
+    }
+
+    .logo span{
+      color:#ff3c00;
+    }
+
+    nav a{
+      color:#fff;
+      text-decoration:none;
+      margin-left:25px;
+      font-size:15px;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#ff3c00;
+    }
+
+    .hero{
+      height:700px;
+      background:url('https://images.unsplash.com/photo-1523398002811-999ca8dec234?q=80&w=1800') center/cover;
+      position:relative;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+    }
+
+    .hero::before{
+      content:'';
+      position:absolute;
+      width:100%;
+      height:100%;
+      background:rgba(0,0,0,0.65);
+    }
+
+    .hero-content{
+      position:relative;
+      z-index:2;
+      max-width:800px;
+      padding:20px;
+    }
+
+    .hero h1{
+      font-size:72px;
+      margin-bottom:20px;
+      text-transform:uppercase;
+    }
+
+    .hero p{
+      font-size:22px;
+      color:#ddd;
+      margin-bottom:35px;
+    }
+
+    .btn{
+      background:#ff3c00;
+      color:#fff;
+      padding:18px 42px;
+      text-decoration:none;
+      border-radius:6px;
+      font-weight:bold;
+      font-size:17px;
+      transition:0.3s;
+      display:inline-block;
+    }
+
+    .btn:hover{
+      background:#d92f00;
+      transform:scale(1.05);
+    }
+
+    .products{
+      padding:80px 50px;
+    }
+
+    .section-title{
+      font-size:42px;
+      margin-bottom:50px;
+      text-align:center;
+      text-transform:uppercase;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:30px;
+    }
+
+    .card{
+      background:#141414;
+      border:1px solid #242424;
+      overflow:hidden;
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-8px);
+      border-color:#ff3c00;
+    }
+
+    .card img{
+      width:100%;
+      height:360px;
+      object-fit:cover;
+    }
+
+    .card-body{
+      padding:25px;
+    }
+
+    .card h3{
+      font-size:24px;
+      margin-bottom:10px;
+    }
+
+    .card p{
+      color:#bbb;
+      line-height:1.6;
+    }
+
+    .price{
+      margin:20px 0;
+      font-size:28px;
+      font-weight:bold;
+      color:#ff3c00;
+    }
+
+    .banner{
+      background:#111;
+      padding:90px 40px;
+      text-align:center;
+    }
+
+    .banner h2{
+      font-size:48px;
+      margin-bottom:20px;
+    }
+
+    .banner p{
+      max-width:700px;
+      margin:auto;
+      color:#bbb;
+      line-height:1.8;
+      margin-bottom:30px;
+    }
+
+    footer{
+      background:#000;
+      padding:60px 50px;
+      border-top:1px solid #1f1f1f;
+    }
+
+    .footer-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:40px;
+    }
+
+    footer h4{
+      margin-bottom:18px;
+      color:#fff;
+      font-size:22px;
+    }
+
+    footer p{
+      color:#aaa;
+      line-height:1.8;
+      font-size:15px;
+    }
+
+    .copyright{
+      margin-top:40px;
+      border-top:1px solid #1f1f1f;
+      padding-top:20px;
+      text-align:center;
+      color:#777;
+      font-size:14px;
+    }
+
+    @media(max-width:768px){
+
+      header{
+        flex-direction:column;
+      }
+
+      nav{
+        margin-top:15px;
+      }
+
+      .hero h1{
+        font-size:42px;
+      }
+
+      .hero p{
+        font-size:18px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+<header>
+
+  <div class="logo">
+    URBAN<span>ELITE</span>
+  </div>
+
+  <nav>
+    <a href="#">Lançamentos</a>
+    <a href="#">Masculino</a>
+    <a href="#">Feminino</a>
+    <a href="#">Moletons</a>
+    <a href="#">Contato</a>
+  </nav>
+
+</header>
+
+<section class="hero">
+
+  <div class="hero-content">
+
+    <h1>Streetwear Brutal</h1>
+
+    <p>
+      Peças premium pra quem vive no modo insano.
+      Estilo pesado, qualidade absurda e entrega rápida.
+    </p>
+
+    <a href="#" class="btn">VER COLEÇÃO</a>
+
+  </div>
+
+</section>
+
+<section class="products">
+
+  <h2 class="section-title">
+    Destaques
+  </h2>
+
+  <div class="grid">
+
+    <div class="card">
+
+      <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=1200">
+
+      <div class="card-body">
+
+        <h3>Camiseta Shadow</h3>
+
+        <p>
+          Tecido premium com modelagem oversized.
+        </p>
+
+        <div class="price">
+          R$ 119,90
+        </div>
+
+        <a href="#" class="btn">Comprar</a>
+
+      </div>
+
+    </div>
+
+    <div class="card">
+
+      <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?q=80&w=1200">
+
+      <div class="card-body">
+
+        <h3>Moletom Blackout</h3>
+
+        <p>
+          Conforto absurdo com visual street premium.
+        </p>
+
+        <div class="price">
+          R$ 249,90
+        </div>
+
+        <a href="#" class="btn">Comprar</a>
+
+      </div>
+
+    </div>
+
+    <div class="card">
+
+      <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=1200">
+
+      <div class="card-body">
+
+        <h3>Jaqueta Urban</h3>
+
+        <p>
+          Design agressivo pra quem domina a rua.
+        </p>
+
+        <div class="price">
+          R$ 329,90
+        </div>
+
+        <a href="#" class="btn">Comprar</a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="banner">
+
+  <h2>
+    Moda sem frescura
+  </h2>
+
+  <p>
+    Criamos peças inspiradas na cultura urbana,
+    skate, música e lifestyle underground.
+    Tudo com qualidade premium e identidade forte.
+  </p>
+
+  <a href="#" class="btn">
+    EXPLORAR AGORA
+  </a>
+
+</section>
+
+<footer>
+
+  <div class="footer-grid">
+
+    <div>
+
+      <h4>Sobre Nós</h4>
+
+      <p>
+        Marca especializada em streetwear,
+        moda urbana e acessórios premium.
+      </p>
+
+    </div>
+
+    <div>
+
+      <h4>Contato</h4>
+
+      <p>Email: contato@urbanelite.com.br</p>
+
+      <p>Telefone: (11) 4000-4000</p>
+
+      <p>WhatsApp: (11) 99999-9999</p>
+
+    </div>
+
+    <div>
+
+      <h4>Endereço</h4>
+
+      <p>
+        Rua Augusta, 1500<br>
+        Consolação - São Paulo/SP<br>
+        CEP: 01305-100
+      </p>
+
+      <p>
+        CNPJ: 12.345.678/0001-99
+      </p>
+
+    </div>
+
+  </div>
+
+  <div class="copyright">
+    © 2026 URBAN ELITE — Todos os direitos reservados.
+  </div>
+
+</footer>
+
+</body>
+</html>
